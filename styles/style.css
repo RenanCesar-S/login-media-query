@@ -14,6 +14,7 @@
     --color3: #4b0c48;
     --color4: #0d6b0d;
     --color5: #000000;
+    --color-alt: #0f7e0f;;
 }
 
 * {
@@ -66,10 +67,53 @@ section#login > div#form {
     text-align: center;
 }
 
-div#form > p {
-    padding: 8px;
+div#form > h1 {
+    margin-bottom: 8px;
 }
 
-div#form > form > button {
-    margin-top: 8px;
+div#form > p {
+    font-size: 0.8em;
+}
+
+form > p.field {
+    background-color: var(--color3);
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 8px 0px;
+}
+
+div#form > form > input#submit {
+    display: block;
+    font-size: 1em;
+    letter-spacing: 0.4px;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--color-alt);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+div#form > form > input#submit:hover {
+    background-color: var(--color4);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+div#form > form > a.forgotPassButton{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    background-color: white;
+    color: var(--color4);
+    border: 1px solid var(--color-alt);
+    border-radius: 4px;
+    text-decoration: none;
+}
+div#form > form > a.forgotPassButton:hover {
+    background-color: var(--color1);
 }
