@@ -40,7 +40,6 @@ section#login {
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
@@ -48,7 +47,7 @@ section#login {
     height: 480px;
     border-radius: 16px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.473);
-    
+    transform: translate(-50%, -50%);
     transition: width 0.4s, heigth 0.4s;
     transition-timing-function: ease;
 }
@@ -96,11 +95,11 @@ p.field > input {
     background-color: var(--color1);
     font-size: 1em;
     padding: 4px;
-    transform: translateY(-15px);
     width: calc(100% - 40px);
     height: 96%;
     border: 0;
     border-radius: 4px;
+    transform: translateY(-15px);
 }
 
 p.field > input:focus-within {
