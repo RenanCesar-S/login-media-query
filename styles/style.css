@@ -44,8 +44,8 @@ section#login {
     overflow: hidden;
 
     background-color: white;
-    width: 290px;
-    height: 520px;
+    width: 340px;
+    height: 540px;
     border-radius: 16px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.473);
     
@@ -73,6 +73,7 @@ div#form > h1 {
 
 div#form > p {
     font-size: 0.8em;
+    margin-bottom: 16px;
 }
 
 form > p.field {
