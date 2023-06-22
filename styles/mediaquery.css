@@ -13,7 +13,7 @@
 
     section#login {
         width: 80vw;
-        height: 40vh;
+        height: 380px;
     }
     section#login > div#bg-image {
         float: left;
@@ -35,7 +35,7 @@
 @media screen and (min-width: 1200px) {
     section#login {
         width: 920px;
-        height: 48vh;
+        height: 420px;
     }
 
     section#login > div#bg-image {
