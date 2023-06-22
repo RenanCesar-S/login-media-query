@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/*
+    #E0F5FE
+    #FFDFFF
+    #CA53C4
+    #05FF04
+    #000000
+*/
+
+:root {
+    --color1: #E0F5FE;
+    --color2: #FFDFFF;
+    --color3: #4b0c48;
+    --color4: #0d6b0d;
+    --color5: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    background-color: var(--color3);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 240px;
+    height: 480px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.473);
+    
+    transition: width 0.4s, heigth 0.4s;
+    transition-timing-function: ease;
+}
+
+section#login > div#bg-image {
+    display: block;
+    background: var(--color1) url(../images/bg-game.jpg) no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 180px;
+}
+
+section#login > div#form {
+    display: block;
+    padding: 8px;
+    text-align: center;
+}
+
+div#form > p {
+    padding: 8px;
+}
+
+div#form > form > button {
+    margin-top: 8px;
+}
