@@ -45,7 +45,7 @@ section#login {
 
     background-color: white;
     width: 340px;
-    height: 540px;
+    height: 480px;
     border-radius: 16px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.473);
     
@@ -80,9 +80,31 @@ form > p.field {
     background-color: var(--color3);
     display: block;
     width: 100%;
-    padding: 8px;
-    border-radius: 4px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--color3);
     margin: 8px 0px;
+}
+
+p.field > label > img {
+    width: 32px;
+    height: 40px;
+    padding: 4px;
+}
+
+p.field > input {
+    background-color: var(--color1);
+    font-size: 1em;
+    padding: 4px;
+    transform: translateY(-15px);
+    width: calc(100% - 40px);
+    height: 96%;
+    border: 0;
+    border-radius: 4px;
+}
+
+p.field > input:focus-within {
+    background-color: white;
 }
 
 div#form > form > input#submit {
@@ -118,3 +140,4 @@ div#form > form > a.forgotPassButton{
 div#form > form > a.forgotPassButton:hover {
     background-color: var(--color1);
 }
+
